@@ -1,0 +1,532 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    align-content: center;
+}
+#logo
+{
+    height: 150px;
+    width: 200px;
+    align-content: center;
+    border: 50px;
+    border-color: wheat;
+    border-radius: 20%;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*header {
+    background: linear-gradient(60deg,#E65100,#D81B60);
+    background: linear-gradient(90deg, #f96949, #FFC300);
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+header a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
+header a:hover {
+    color: #f5cdc5;
+}
+
+header a span {
+    position: relative;
+    z-index: 1;
+}*/
+header {
+    background: linear-gradient(45deg, #f7ae66, #F6DFA7); /* Elegant beige-to-yellow gradient */
+    padding: 1.5rem 2.5rem; 
+    color: white;
+    /*justify-content: space-between;
+    align-items: center;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    border-radius: 0;
+}
+.navn{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.tabs{
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+header img#logo {
+    height: 120px; 
+    object-fit: contain;
+    margin-right: 2rem;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+header a {
+    color: #4E342E; 
+    text-decoration:wavy;
+    padding: 0.7rem 1.4rem; 
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
+header a:hover {
+    color: #000000; 
+}
+
+header a span {
+    position: relative;
+    z-index: 1;
+}
+
+/*header .cartNav {
+    background: #FFD700; 
+    color: #3E2723; 
+    padding: 0.8rem 1.6rem;
+    font-weight: bold;
+    border-radius: 12px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .cartNav:hover {
+    background: #FFECB3; 
+    color: #4E342E;
+}*/
+
+
+.hero {
+    background: url('bg4.png') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.categories div {
+    text-align: center;
+}
+
+.categories img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    border-spacing: 10cap;
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-card {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*footer {
+    background-color: #FF5733;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}*/
+.card {
+    padding: 5px;
+    margin: 30px;
+}
+footer {
+    background: linear-gradient(90deg, #F4D06F, #E8C097); /* Beige-to-ochre gradient */
+    padding: 2rem;
+    text-align: center;
+    color: #3E2723; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .footer-content {
+    margin-bottom: 1rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #5D4037;
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+footer .socials li {
+    display: inline-block;
+}
+
+footer .socials li a {
+    color: #3E2723;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .socials li a:hover {
+    color: #FFD700;
+}
+
+footer .footer-bottom {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #5D4037;
+}
+.art{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.signup-form input {
+
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.signup-form label {
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.signup-section {
+   justify-content: center;
+   margin: 50px;
+    
+}
+.signup-form button {
+    width: 30%;
+    padding: 1rem;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.add-to-cart-btn {
+    background-color:#FF5733;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #218838;
+  }
+  #cart-image {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .d-block{
+    height: 400px;
+    object-fit: cover;
+  }
+  .products {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card-title {
+    display: block;
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.button-box {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e65c00;
+}
+main, section, .carousel {
+    flex: 1;
+}
+
+.container {
+    padding: 60px;
+}
+.view-more-btn {
+    margin: 10px;
+    background-color: brown;
+}
+
+.type-of-art{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 20px;
+}
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+  }
+
+  #logo {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px; /* space between nav and tabs */
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid #3E2723;
+  }
+
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #495057;
+  }
+
+  .nav-tabs .nav-link.active {
+    color: #380349;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+  }
+  .nav-item{
+    font-weight: bold;
+  }
+  body {
+    background-color: #fffdf8;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #ContactHead {
+    color: #b03a2e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-line: overline;
+  }
+  
+  main.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  form .form-control {
+    border-radius: 0.4rem;
+  }
+  
+  button.btn-primary {
+    background-color: #b03a2e;
+    border-color: #b03a2e;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #922b21;
+    border-color: #922b21;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e4e4e4;
+  }
+  
+  footer h3, footer h5 {
+    color: #b03a2e;
+  }
+  
+  footer .fab {
+    transition: color 0.3s ease;
+  }
+  
+  footer .fab:hover {
+    color: #b03a2e;
+  }
+  
+  footer .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
