@@ -112,4 +112,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **GitHub Issues**: Feel free to open an issue for questions or bugs.
 
 © 2025 RangRekha | Designed with ❤ by the RangRekha Team
-```
